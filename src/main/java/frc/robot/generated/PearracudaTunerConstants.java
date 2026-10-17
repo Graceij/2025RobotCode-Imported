@@ -26,7 +26,7 @@ public class PearracudaTunerConstants extends TunerConstants {
             .withKV(0.81887) // 0.81228
             .withKA(0.0040132);
 
-    private static final CANBus CAN_BUS = new CANBus("Drivetrain", "./logs/example.hoot");
+    private static final CANBus CAN_BUS_DRIVE = new CANBus("Drivetrain", "./logs/example.hoot");
 
     private static final double COUPLE_RATIO = 3.5714285714285716;
     private static final double DRIVE_RATIO = 6.746031746031747;
@@ -51,7 +51,7 @@ public class PearracudaTunerConstants extends TunerConstants {
         super(
                 STEER_GAINS,
                 DRIVE_GAINS,
-                CAN_BUS,
+                CAN_BUS_DRIVE,
                 COUPLE_RATIO,
                 DRIVE_RATIO,
                 TURN_RATIO,

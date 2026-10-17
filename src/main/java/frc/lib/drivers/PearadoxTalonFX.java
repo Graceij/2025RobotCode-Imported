@@ -6,6 +6,8 @@ import com.ctre.phoenix6.hardware.TalonFX;
 import com.ctre.phoenix6.signals.InvertedValue;
 import com.ctre.phoenix6.signals.NeutralModeValue;
 
+import frc.robot.Constants;
+
 /** Add your docs here. */
 public class PearadoxTalonFX extends TalonFX {
     /**
@@ -30,7 +32,7 @@ public class PearadoxTalonFX extends TalonFX {
      * @param isInverted The invert type of the motor.
      */
     public PearadoxTalonFX(int deviceId, NeutralModeValue mode, int supply, int stator, boolean isInverted) {
-        super(deviceId);
+        super(deviceId, Constants.CAN_BUS_EVERYTHING_ELSE);
         TalonFXConfiguration config = new TalonFXConfiguration();
 
         config.MotorOutput.NeutralMode = mode;

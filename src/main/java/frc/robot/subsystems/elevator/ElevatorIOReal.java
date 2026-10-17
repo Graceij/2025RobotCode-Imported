@@ -70,7 +70,7 @@ public class ElevatorIOReal implements ElevatorIO {
 
         elevatorFollower.getConfigurator().apply(talonFXConfigs);
         elevatorFollower.optimizeBusUtilization();
-        elevatorFollower.setControl(new Follower(ElevatorConstants.ELEVATOR_ID, MotorAlignmentValue.Aligned));
+        elevatorFollower.setControl(new Follower(ElevatorConstants.ELEVATOR_ID, MotorAlignmentValue.Opposed));
     }
 
     @Override

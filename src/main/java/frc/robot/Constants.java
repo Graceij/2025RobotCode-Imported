@@ -42,7 +42,7 @@ public class Constants {
     public static final RobotIdentity IDENTITY = RobotIdentity.getRobotIdentity();
     public static final String IDENTITY_STRING = RobotIdentity.getRobotIdentityString();
     public static final TunerConstants TUNER_CONSTANTS = IDENTITY.tunerConstants;
-    public static final CANBus CAN_BUS = CANBus.systemcore(1);
+    public static final CANBus CAN_BUS_EVERYTHING_ELSE = CANBus.systemcore(0);
 
     public static class VisionConstants {
         public static final String LL_NAME = "limelight-back";

@@ -29,7 +29,7 @@ import java.util.Queue;
 public class GyroIOPigeon2 implements GyroIO {
     private final Pigeon2 pigeon = new Pigeon2(
             Constants.TUNER_CONSTANTS.DrivetrainConstants.Pigeon2Id,
-            Constants.CAN_BUS);
+            Constants.CAN_BUS_EVERYTHING_ELSE);
     private final StatusSignal<Angle> yaw = pigeon.getYaw();
     private final Queue<Double> yawPositionQueue;
     private final Queue<Double> yawTimestampQueue;

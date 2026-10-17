@@ -249,7 +249,7 @@ public class Drive extends SubsystemBase implements Vision.VisionConsumer {
         // Calculate module setpoints
         speeds = speeds.discretize(0.02);
         SwerveModuleVelocity[] setpointStates = kinematics.toSwerveModuleVelocities(speeds);
-        SwerveDriveKinematics.desaturateWheelVelocities(setpointStates, Constants.TUNER_CONSTANTS.kSpeedAt12Volts);
+        setpointStates = SwerveDriveKinematics.desaturateWheelVelocities(setpointStates, Constants.TUNER_CONSTANTS.kSpeedAt12Volts);
 
         // Log unoptimized setpoints and setpoint speeds
         Logger.recordOutput("SwerveStates/Setpoints", setpointStates);
