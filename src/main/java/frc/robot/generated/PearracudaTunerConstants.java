@@ -39,10 +39,10 @@ public class PearracudaTunerConstants extends TunerConstants {
 
     private static final int PIGEON_ID = 15;
 
-    private static final Angle FL_ENCODER_OFFSET = Rotations.of(-0.447021484375);
-    private static final Angle FR_ENCODER_OFFSET = Rotations.of(0.1220703125);
-    private static final Angle BL_ENCODER_OFFSET = Rotations.of(0.349853515625);
-    private static final Angle BR_ENCODER_OFFSET = Rotations.of(0.008056640625);
+    private static final Angle FL_ENCODER_OFFSET = Rotations.of(-0.443115234375);
+    private static final Angle FR_ENCODER_OFFSET = Rotations.of(0.1259765625);
+    private static final Angle BL_ENCODER_OFFSET = Rotations.of(-0.132080078125);
+    private static final Angle BR_ENCODER_OFFSET = Rotations.of(0.497802734375);
 
     private static final Distance FL_X_POS = Inches.of(11.5);
     private static final Distance FL_Y_POS = Inches.of(12.25);
